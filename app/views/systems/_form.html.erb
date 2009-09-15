@@ -1,0 +1,48 @@
+<% form_for @system do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :Make %><br />
+    <%= f.text_field :Make %>
+  </p>
+  <p>
+    <%= f.label :Model %><br />
+    <%= f.text_field :Model %>
+  </p>
+  <p>
+    <%= f.label :CPU_Family %><br />
+    <%= f.text_field :CPU_Family %>
+  </p>
+  <p>
+    <%= f.label :CPU_Clock_Speed %><br />
+    <%= f.text_field :CPU_Clock_Speed %>
+  </p>
+  <p>
+    <%= f.label :RAM_Amount_MB %><br />
+    <%= f.text_field :RAM_Amount_MB %>
+  </p>
+  <p>
+    <%= f.label :Hard_Drive_Capacity_GB %><br />
+    <%= f.text_field :Hard_Drive_Capacity_GB %>
+  </p>
+  <p>
+    <%= f.label :Acquired_Date %><br />
+    <%= f.date_select :Aquired_Date %>
+  </p>
+  <p>
+    <%= f.label :Owner_Full_Name %><br />
+    <%= f.text_field :Owner_Full_Name %>
+  </p>
+  <p>
+    <%= f.label :Owner_Email %><br />
+    <%= f.text_field :Owner_Email %>
+  </p>
+  <p>
+    <%= f.label :Owner_Phone %><br />
+    <%= f.text_field :Owner_Phone %>
+  </p>
+  <p>
+    <%= f.label :Barcode %><br />
+    <%= f.text_field :Barcode %>
+  </p>
+  <p><%= f.submit "Submit" %></p>
+<% end %>

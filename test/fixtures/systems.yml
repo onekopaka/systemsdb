@@ -1,0 +1,25 @@
+one:
+  Make: MyString
+  Model: MyString
+  CPU_Family: MyString
+  CPU_Clock_Speed: MyString
+  RAM_Amount_MB: 1
+  Hard_Drive_Capacity_GB: MyString
+  Aquired_Date: 2009-05-16
+  Owner_Full_Name: MyString
+  Owner_Email: MyString
+  Owner_Phone: 1
+  Barcode: 1
+
+two:
+  Make: MyString
+  Model: MyString
+  CPU_Family: MyString
+  CPU_Clock_Speed: MyString
+  RAM_Amount_MB: 1
+  Hard_Drive_Capacity_GB: MyString
+  Aquired_Date: 2009-05-16
+  Owner_Full_Name: MyString
+  Owner_Email: MyString
+  Owner_Phone: 1
+  Barcode: 1

@@ -1,0 +1,26 @@
+
+
+Processing SystemsController#index (for 76.121.249.193 at 2009-06-01 17:22:07) [GET]
+Rendering template within layouts/application
+Rendering systems/index
+Completed in 41ms (View: 36, DB: 1) | 200 OK [http://systemsdb.oks.kicks-ass.net/]
+
+
+Processing SessionsController#new (for 76.121.249.193 at 2009-06-01 17:22:19) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://systemsdb.oks.kicks-ass.net/login]
+
+
+Processing SessionsController#create (for 76.121.249.193 at 2009-06-01 17:22:26) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"GsFROaaS35NBV58niwUilAP4UBM2KzsCXGHNBGpvyQI=", "login"=>"onekopaka", "password"=>"maggieluv", "remember_me"=>"1"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://systemsdb.oks.kicks-ass.net/session]
+
+
+Processing SessionsController#create (for 76.121.249.193 at 2009-06-01 17:22:31) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"GsFROaaS35NBV58niwUilAP4UBM2KzsCXGHNBGpvyQI=", "login"=>"onekopaka", "password"=>"maggieluv"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://systemsdb.oks.kicks-ass.net/session]

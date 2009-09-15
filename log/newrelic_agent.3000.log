@@ -1,0 +1,17 @@
+# Logfile created on Sat Sep 12 10:45:24 -0700 2009 by /
+[09/12/09 10:45:24 (89017)] INFO : Runtime environment: mongrel
+[09/12/09 10:45:24 (89017)] INFO : Error collector is enabled in agent config
+[09/12/09 10:45:24 (89017)] INFO : Transaction tracing is enabled in agent config
+[09/12/09 10:45:24 (89017)] INFO : New Relic RPM Agent 2.8.11 Initialized: pid = 89017, handler = mongrel
+[09/12/09 10:45:24 (89017)] INFO : Agent Log is found in /Users/onekopaka/systemsdb/log/newrelic_agent.3000.log
+[09/12/09 10:45:29 (89017)] INFO : Resolved collector.newrelic.com to 65.74.177.195
+[09/12/09 10:45:31 (89017)] INFO : Connected to NewRelic Service at 65.74.177.195:80
+[09/12/09 10:45:31 (89017)] INFO : Reporting performance data every 60 seconds
+[09/14/09 22:50:00 (21420)] INFO : Runtime environment: mongrel
+[09/14/09 22:50:00 (21420)] INFO : Error collector is enabled in agent config
+[09/14/09 22:50:00 (21420)] INFO : Transaction tracing is enabled in agent config
+[09/14/09 22:50:00 (21420)] INFO : New Relic RPM Agent 2.8.11 Initialized: pid = 21420, handler = mongrel
+[09/14/09 22:50:00 (21420)] INFO : Agent Log is found in /Users/onekopaka/systemsdb/log/newrelic_agent.3000.log
+[09/14/09 22:50:05 (21420)] INFO : Resolved collector.newrelic.com to 65.74.177.195
+[09/14/09 22:50:06 (21420)] INFO : Connected to NewRelic Service at 65.74.177.195:80
+[09/14/09 22:50:06 (21420)] INFO : Reporting performance data every 60 seconds

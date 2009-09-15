@@ -1,0 +1,40 @@
+<% title "Systems" %>
+
+<table>
+  <tr>
+    <th>Make</th>
+    <th>Model</th>
+    <th>CPU Family</th>
+    <th>CPU Clock Speed</th>
+    <th>Ram Amount in MB</th>
+    <th>Hard Drive Capacity in GB</th>
+    <th>Acquired Date</th>
+    <th>Owner Full Name</th>
+    <th>Owner Email</th>
+    <th>Owner Phone</th>
+  </tr>
+  <% for system in @systems %>
+    <tr>
+      <td><%=h system.Make %></td>
+      <td><%=h system.Model %></td>
+      <td><%=h system.CPU_Family %></td>
+      <td><%=h system.CPU_Clock_Speed %></td>
+      <td><%=h system.RAM_Amount_MB %></td>
+      <td><%=h system.Hard_Drive_Capacity_GB %></td>
+      <td><%=h system.Aquired_Date %></td>
+      <td><%=h system.Owner_Full_Name %></td>
+      <td><%=h system.Owner_Email %></td>
+      <td><%=h system.Owner_Phone %></td>
+      <td><%= link_to "Show", system %></td>
+      <% if logged_in? %>
+        <td><%= link_to "Edit", edit_system_path(system) %></td>
+        <% if current_user.admin %>
+          <td><%= link_to "Destroy", system, :confirm => 'Are you sure?', :method => :delete %></td>
+        <% end %>
+      <% end %>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New System", new_system_path %></p>
+<p><%= link_to "Printable Format", systems_path(:format => :pdf) %></p>

@@ -1,0 +1,52 @@
+<% title "System" %>
+
+<p>
+  <strong>Make:</strong>
+  <%=h @system.Make %>
+</p>
+<p>
+  <strong>Model:</strong>
+  <%=h @system.Model %>
+</p>
+<p>
+  <strong>Cpu Family:</strong>
+  <%=h @system.CPU_Family %>
+</p>
+<p>
+  <strong>Cpu Clock Speed:</strong>
+  <%=h @system.CPU_Clock_Speed %>
+</p>
+<p>
+  <strong>Ram Amount Mb:</strong>
+  <%=h @system.RAM_Amount_MB %>
+</p>
+<p>
+  <strong>Hard Drive Capacity Gb:</strong>
+  <%=h @system.Hard_Drive_Capacity_GB %>
+</p>
+<p>
+  <strong>Acquired Date:</strong>
+  <%=h @system.Aquired_Date %>
+</p>
+<p>
+  <strong>Owner Full Name:</strong>
+  <%=h @system.Owner_Full_Name %>
+</p>
+<p>
+  <strong>Owner Email:</strong>
+  <%=h @system.Owner_Email %>
+</p>
+<p>
+  <strong>Owner Phone:</strong>
+  <%=h @system.Owner_Phone %>
+</p>
+<p>
+  <strong>Barcode:</strong>
+  <%=h @system.Barcode %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_system_path(@system) %> |
+  <%= link_to "Destroy", @system, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", systems_path %>
+</p>

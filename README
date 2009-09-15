@@ -1,0 +1,16 @@
+
+ README
+ systemsdb for Tahoma Senior High PC Tech Repair class
+ 
+ Created by Darren VanBuren on 2009-06-02.
+ Copyright 2009 Onekopakaspace. All rights reserved.
+
+Features:
+	- Authentication
+	- Permissions system, albeit hard coded.
+	- PDF export so you can have a hard copy.
+
+TODO:
+	- Ability to change your password
+	- Ability to remove users
+	- Import / export of systems.
