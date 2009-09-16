@@ -2,7 +2,7 @@ class SystemsController < ApplicationController
   # include AuthenticatedSystem
   current_user = @user
   def index
-    @systems = System.all
+    @systems = System.all(:order => :make)
     prawnto :prawn=>{ :page_layout=>:landscape }
   end
   

@@ -11057,3 +11057,236 @@ Processing SystemsController#index to pdf (for 76.121.249.193 at 2009-09-14 23:0
   [4;36;1mSystem Load (3.0ms)[0m   [0;1mSELECT * FROM "systems" [0m
 Rendering systems/index
 Completed in 485ms (View: 476, DB: 3) | 200 OK [http://systemsdb.oks.kicks-ass.net/systems.pdf]
+  [4;36;1mSQL (1.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+
+
+Processing SystemsController#index (for 2001:1938:81:94::2 at 2009-09-15 16:47:06) [GET]
+  Parameters: {"action"=>"index", "controller"=>"systems"}
+  [4;36;1mSystem Load (20.3ms)[0m   [0;1mSELECT * FROM "systems" [0m
+Rendering template within layouts/application
+Rendering systems/index
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 273ms (View: 232, DB: 21) | 200 OK [http://systemsdb.theoks.net/]
+  [4;36;1mSQL (12.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+
+
+Processing SystemsController#index (for 2001:1938:81:94::2 at 2009-09-15 16:59:34) [GET]
+  Parameters: {"action"=>"index", "controller"=>"systems"}
+  [4;36;1mSystem Load (2.9ms)[0m   [0;1mSELECT * FROM "systems" [0m
+Rendering template within layouts/application
+Rendering systems/index
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 207ms (View: 183, DB: 4) | 200 OK [http://systemsdb.theoks.net/]
+  [4;36;1mSQL (39.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (16.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSystem Load (2.7ms)[0m   [0;1mSELECT * FROM "systems" ORDER BY make[0m
+  [4;35;1mSystem Load (2.8ms)[0m   [0mSELECT * FROM "systems" ORDER BY make[0m
+
+
+Processing SystemsController#index (for 2001:1938:81:94::2 at 2009-09-15 17:03:02) [GET]
+  Parameters: {"action"=>"index", "controller"=>"systems"}
+  [4;36;1mSystem Load (19.2ms)[0m   [0;1mSELECT * FROM "systems" ORDER BY make[0m
+Rendering template within layouts/application
+Rendering systems/index
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 71ms (View: 45, DB: 20) | 200 OK [http://systemsdb.theoks.net/]
+  [4;36;1mSystem Load (2.6ms)[0m   [0;1mSELECT * FROM "systems" ORDER BY make[0m
+  [4;35;1mSystem Load (3.0ms)[0m   [0mSELECT * FROM "systems" ORDER BY make[0m
+  [4;36;1mSystem Load (3.0ms)[0m   [0;1mSELECT * FROM "systems" ORDER BY CPU_Family[0m
+  [4;35;1mSystem Load (3.2ms)[0m   [0mSELECT * FROM "systems" ORDER BY CPU_Clock_Speed[0m
+
+
+Processing SystemsController#edit (for 2001:1938:81:94::2 at 2009-09-15 17:05:40) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"systems"}
+  [4;36;1mSystem Load (0.6ms)[0m   [0;1mSELECT * FROM "systems" WHERE ("systems"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering systems/edit
+Rendered systems/_form (87.3ms)
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 165ms (View: 147, DB: 1) | 200 OK [http://systemsdb.theoks.net/systems/1/edit]
+
+
+Processing SystemsController#update (for 2001:1938:81:94::2 at 2009-09-15 17:05:52) [PUT]
+  Parameters: {"commit"=>"Submit", "action"=>"update", "_method"=>"put", "authenticity_token"=>"Qy2hm6RNuf/adv2TjFZS/8MQKLVwfKmEKPSeSLIzInY=", "system"=>{"Barcode"=>"123456", "Aquired_Date(3i)"=>"23", "Hard_Drive_Capacity_GB"=>"80", "Owner_Phone"=>"18885555555", "Model"=>"Aspire 3680", "Make"=>"Acer", "Owner_Full_Name"=>"Darren VanBuren", "Owner_Email"=>"onekopaka@gmail.com", "Aquired_Date(1i)"=>"2009", "RAM_Amount_MB"=>"2048", "CPU_Clock_Speed"=>"1.87 GHz", "CPU_Family"=>"Intel Celeron Mobile", "Aquired_Date(2i)"=>"5"}, "id"=>"1", "controller"=>"systems"}
+  [4;36;1mSystem Load (1.1ms)[0m   [0;1mSELECT * FROM "systems" WHERE ("systems"."id" = 1) [0m
+  [4;35;1mSystem Update (10.3ms)[0m   [0mUPDATE "systems" SET "CPU_Clock_Speed" = '1.87 GHz', "updated_at" = '2009-09-16 00:05:52' WHERE "id" = 1[0m
+Redirected to http://systemsdb.theoks.net/systems/1
+Completed in 33ms (DB: 11) | 302 Found [http://systemsdb.theoks.net/systems/1]
+
+
+Processing SystemsController#show (for 2001:1938:81:94::2 at 2009-09-15 17:05:52) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"systems"}
+  [4;36;1mSystem Load (3.0ms)[0m   [0;1mSELECT * FROM "systems" WHERE ("systems"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering systems/show
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 74ms (View: 61, DB: 4) | 200 OK [http://systemsdb.theoks.net/systems/1]
+
+
+Processing SystemsController#index (for 2001:1938:81:94::2 at 2009-09-15 17:05:55) [GET]
+  Parameters: {"action"=>"index", "controller"=>"systems"}
+  [4;36;1mSystem Load (3.0ms)[0m   [0;1mSELECT * FROM "systems" ORDER BY make[0m
+Rendering template within layouts/application
+Rendering systems/index
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 133ms (View: 124, DB: 4) | 200 OK [http://systemsdb.theoks.net/systems]
+
+
+Processing SystemsController#edit (for 2001:1938:81:94::2 at 2009-09-15 17:06:00) [GET]
+  Parameters: {"action"=>"edit", "id"=>"8", "controller"=>"systems"}
+  [4;36;1mSystem Load (2.7ms)[0m   [0;1mSELECT * FROM "systems" WHERE ("systems"."id" = 8) [0m
+Rendering template within layouts/application
+Rendering systems/edit
+Rendered systems/_form (14.8ms)
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 52ms (View: 38, DB: 3) | 200 OK [http://systemsdb.theoks.net/systems/8/edit]
+
+
+Processing SystemsController#update (for 2001:1938:81:94::2 at 2009-09-15 17:06:07) [PUT]
+  Parameters: {"commit"=>"Submit", "action"=>"update", "_method"=>"put", "authenticity_token"=>"Qy2hm6RNuf/adv2TjFZS/8MQKLVwfKmEKPSeSLIzInY=", "system"=>{"Barcode"=>"", "Aquired_Date(3i)"=>"14", "Hard_Drive_Capacity_GB"=>"40", "Owner_Phone"=>"919902766962", "Model"=>"V3000 Series", "Make"=>"Compaq", "Owner_Full_Name"=>"Hiemanshu Sharma", "Owner_Email"=>"himanshu.sharmaa@gmail.com", "Aquired_Date(1i)"=>"2005", "RAM_Amount_MB"=>"768", "CPU_Clock_Speed"=>"1.6Ghz", "CPU_Family"=>"Celeron", "Aquired_Date(2i)"=>"9"}, "id"=>"8", "controller"=>"systems"}
+  [4;36;1mSystem Load (0.7ms)[0m   [0;1mSELECT * FROM "systems" WHERE ("systems"."id" = 8) [0m
+  [4;35;1mSystem Update (0.5ms)[0m   [0mUPDATE "systems" SET "Hard_Drive_Capacity_GB" = '40', "updated_at" = '2009-09-16 00:06:07' WHERE "id" = 8[0m
+Redirected to http://systemsdb.theoks.net/systems/8
+Completed in 19ms (DB: 1) | 302 Found [http://systemsdb.theoks.net/systems/8]
+
+
+Processing SystemsController#show (for 2001:1938:81:94::2 at 2009-09-15 17:06:07) [GET]
+  Parameters: {"action"=>"show", "id"=>"8", "controller"=>"systems"}
+  [4;36;1mSystem Load (0.7ms)[0m   [0;1mSELECT * FROM "systems" WHERE ("systems"."id" = 8) [0m
+Rendering template within layouts/application
+Rendering systems/show
+  [4;35;1mUser Load (1.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 29ms (View: 19, DB: 2) | 200 OK [http://systemsdb.theoks.net/systems/8]
+
+
+Processing SystemsController#index (for 2001:1938:81:94::2 at 2009-09-15 17:06:08) [GET]
+  Parameters: {"action"=>"index", "controller"=>"systems"}
+  [4;36;1mSystem Load (3.1ms)[0m   [0;1mSELECT * FROM "systems" ORDER BY make[0m
+Rendering template within layouts/application
+Rendering systems/index
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 40ms (View: 31, DB: 4) | 200 OK [http://systemsdb.theoks.net/systems]
+
+
+Processing SystemsController#edit (for 2001:1938:81:94::2 at 2009-09-15 17:06:18) [GET]
+  Parameters: {"action"=>"edit", "id"=>"8", "controller"=>"systems"}
+  [4;36;1mSystem Load (0.5ms)[0m   [0;1mSELECT * FROM "systems" WHERE ("systems"."id" = 8) [0m
+Rendering template within layouts/application
+Rendering systems/edit
+Rendered systems/_form (11.4ms)
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 35ms (View: 26, DB: 1) | 200 OK [http://systemsdb.theoks.net/systems/8/edit]
+
+
+Processing SystemsController#update (for 2001:1938:81:94::2 at 2009-09-15 17:06:28) [PUT]
+  Parameters: {"commit"=>"Submit", "action"=>"update", "_method"=>"put", "authenticity_token"=>"Qy2hm6RNuf/adv2TjFZS/8MQKLVwfKmEKPSeSLIzInY=", "system"=>{"Barcode"=>"", "Aquired_Date(3i)"=>"14", "Hard_Drive_Capacity_GB"=>"40", "Owner_Phone"=>"919902766962", "Model"=>"V3000 Series", "Make"=>"Compaq", "Owner_Full_Name"=>"Hiemanshu Sharma", "Owner_Email"=>"himanshu.sharmaa@gmail.com", "Aquired_Date(1i)"=>"2005", "RAM_Amount_MB"=>"768", "CPU_Clock_Speed"=>"1.6GHz", "CPU_Family"=>"Celeron", "Aquired_Date(2i)"=>"9"}, "id"=>"8", "controller"=>"systems"}
+  [4;36;1mSystem Load (0.7ms)[0m   [0;1mSELECT * FROM "systems" WHERE ("systems"."id" = 8) [0m
+  [4;35;1mSystem Update (0.9ms)[0m   [0mUPDATE "systems" SET "CPU_Clock_Speed" = '1.6GHz', "updated_at" = '2009-09-16 00:06:28' WHERE "id" = 8[0m
+Redirected to http://systemsdb.theoks.net/systems/8
+Completed in 17ms (DB: 2) | 302 Found [http://systemsdb.theoks.net/systems/8]
+
+
+Processing SystemsController#show (for 2001:1938:81:94::2 at 2009-09-15 17:06:28) [GET]
+  Parameters: {"action"=>"show", "id"=>"8", "controller"=>"systems"}
+  [4;36;1mSystem Load (0.6ms)[0m   [0;1mSELECT * FROM "systems" WHERE ("systems"."id" = 8) [0m
+Rendering template within layouts/application
+Rendering systems/show
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 28ms (View: 17, DB: 1) | 200 OK [http://systemsdb.theoks.net/systems/8]
+
+
+Processing SystemsController#index (for 2001:1938:81:94::2 at 2009-09-15 17:06:29) [GET]
+  Parameters: {"action"=>"index", "controller"=>"systems"}
+  [4;36;1mSystem Load (3.0ms)[0m   [0;1mSELECT * FROM "systems" ORDER BY make[0m
+Rendering template within layouts/application
+Rendering systems/index
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 36ms (View: 27, DB: 4) | 200 OK [http://systemsdb.theoks.net/systems]
+
+
+Processing SystemsController#edit (for 2001:1938:81:94::2 at 2009-09-15 17:06:47) [GET]
+  Parameters: {"action"=>"edit", "id"=>"6", "controller"=>"systems"}
+  [4;36;1mSystem Load (0.7ms)[0m   [0;1mSELECT * FROM "systems" WHERE ("systems"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering systems/edit
+Rendered systems/_form (12.4ms)
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 38ms (View: 28, DB: 1) | 200 OK [http://systemsdb.theoks.net/systems/6/edit]
+
+
+Processing SystemsController#update (for 2001:1938:81:94::2 at 2009-09-15 17:06:53) [PUT]
+  Parameters: {"commit"=>"Submit", "action"=>"update", "_method"=>"put", "authenticity_token"=>"Qy2hm6RNuf/adv2TjFZS/8MQKLVwfKmEKPSeSLIzInY=", "system"=>{"Barcode"=>"", "Aquired_Date(3i)"=>"5", "Hard_Drive_Capacity_GB"=>"640", "Owner_Phone"=>"919902766962", "Model"=>"Custom", "Make"=>"Custom", "Owner_Full_Name"=>"Hiemanshu Sharma", "Owner_Email"=>"himanshu.sharmaa@gmail.com", "Aquired_Date(1i)"=>"2009", "RAM_Amount_MB"=>"8192", "CPU_Clock_Speed"=>"3.0Ghz", "CPU_Family"=>"AMD Phenom II x4 940", "Aquired_Date(2i)"=>"6"}, "id"=>"6", "controller"=>"systems"}
+  [4;36;1mSystem Load (0.8ms)[0m   [0;1mSELECT * FROM "systems" WHERE ("systems"."id" = 6) [0m
+  [4;35;1mSystem Update (0.5ms)[0m   [0mUPDATE "systems" SET "Hard_Drive_Capacity_GB" = '640', "updated_at" = '2009-09-16 00:06:53' WHERE "id" = 6[0m
+Redirected to http://systemsdb.theoks.net/systems/6
+Completed in 18ms (DB: 1) | 302 Found [http://systemsdb.theoks.net/systems/6]
+
+
+Processing SystemsController#show (for 2001:1938:81:94::2 at 2009-09-15 17:06:53) [GET]
+  Parameters: {"action"=>"show", "id"=>"6", "controller"=>"systems"}
+  [4;36;1mSystem Load (0.6ms)[0m   [0;1mSELECT * FROM "systems" WHERE ("systems"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering systems/show
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 27ms (View: 17, DB: 1) | 200 OK [http://systemsdb.theoks.net/systems/6]
+
+
+Processing SystemsController#index (for 2001:1938:81:94::2 at 2009-09-15 17:06:56) [GET]
+  Parameters: {"action"=>"index", "controller"=>"systems"}
+  [4;36;1mSystem Load (2.9ms)[0m   [0;1mSELECT * FROM "systems" ORDER BY make[0m
+Rendering template within layouts/application
+Rendering systems/index
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 37ms (View: 29, DB: 3) | 200 OK [http://systemsdb.theoks.net/systems]
+
+
+Processing SystemsController#edit (for 2001:1938:81:94::2 at 2009-09-15 17:07:10) [GET]
+  Parameters: {"action"=>"edit", "id"=>"7", "controller"=>"systems"}
+  [4;36;1mSystem Load (0.6ms)[0m   [0;1mSELECT * FROM "systems" WHERE ("systems"."id" = 7) [0m
+Rendering template within layouts/application
+Rendering systems/edit
+Rendered systems/_form (13.1ms)
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 45ms (View: 35, DB: 1) | 200 OK [http://systemsdb.theoks.net/systems/7/edit]
+
+
+Processing SystemsController#update (for 2001:1938:81:94::2 at 2009-09-15 17:07:17) [PUT]
+  Parameters: {"commit"=>"Submit", "action"=>"update", "_method"=>"put", "authenticity_token"=>"Qy2hm6RNuf/adv2TjFZS/8MQKLVwfKmEKPSeSLIzInY=", "system"=>{"Barcode"=>"", "Aquired_Date(3i)"=>"27", "Hard_Drive_Capacity_GB"=>"160", "Owner_Phone"=>"919902766962", "Model"=>"V3225AU", "Make"=>"HP", "Owner_Full_Name"=>"Hiemanshu Sharma", "Owner_Email"=>"himanshu.sharmaa@gmail.com", "Aquired_Date(1i)"=>"2007", "RAM_Amount_MB"=>"3096", "CPU_Clock_Speed"=>"1.6Ghz", "CPU_Family"=>"AMD Turion MK-36", "Aquired_Date(2i)"=>"4"}, "id"=>"7", "controller"=>"systems"}
+  [4;36;1mSystem Load (0.6ms)[0m   [0;1mSELECT * FROM "systems" WHERE ("systems"."id" = 7) [0m
+  [4;35;1mSystem Update (0.6ms)[0m   [0mUPDATE "systems" SET "Hard_Drive_Capacity_GB" = '160', "updated_at" = '2009-09-16 00:07:17' WHERE "id" = 7[0m
+Redirected to http://systemsdb.theoks.net/systems/7
+Completed in 21ms (DB: 1) | 302 Found [http://systemsdb.theoks.net/systems/7]
+
+
+Processing SystemsController#show (for 2001:1938:81:94::2 at 2009-09-15 17:07:17) [GET]
+  Parameters: {"action"=>"show", "id"=>"7", "controller"=>"systems"}
+  [4;36;1mSystem Load (0.6ms)[0m   [0;1mSELECT * FROM "systems" WHERE ("systems"."id" = 7) [0m
+Rendering template within layouts/application
+Rendering systems/show
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 31ms (View: 21, DB: 1) | 200 OK [http://systemsdb.theoks.net/systems/7]
+
+
+Processing SystemsController#index (for 2001:1938:81:94::2 at 2009-09-15 17:07:19) [GET]
+  Parameters: {"action"=>"index", "controller"=>"systems"}
+  [4;36;1mSystem Load (2.9ms)[0m   [0;1mSELECT * FROM "systems" ORDER BY make[0m
+Rendering template within layouts/application
+Rendering systems/index
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 38ms (View: 29, DB: 3) | 200 OK [http://systemsdb.theoks.net/systems]

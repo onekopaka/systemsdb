@@ -352,3 +352,23 @@
 [09/14/09 22:47:43 (21371)] INFO : Resolved collector.newrelic.com to 65.74.177.195
 [09/14/09 22:47:43 (21371)] INFO : Connected to NewRelic Service at 65.74.177.195:80
 [09/14/09 22:47:44 (21371)] INFO : Reporting performance data every 60 seconds
+[09/15/09 16:47:04 (27415)] INFO : Runtime environment: passenger
+[09/15/09 16:47:04 (27415)] WARN : Phusion Passenger has been detected. Some RPM memory statistics may have inaccuracies due to short process lifespans
+[09/15/09 16:47:04 (27415)] INFO : Error collector is enabled in agent config
+[09/15/09 16:47:04 (27415)] INFO : Transaction tracing is enabled in agent config
+[09/15/09 16:47:04 (27415)] INFO : Process is passenger spawner - don't connect to RPM service
+[09/15/09 16:47:04 (27415)] INFO : New Relic RPM Agent 2.8.11 Initialized: pid = 27415, handler = passenger
+[09/15/09 16:47:04 (27415)] INFO : Agent Log is found in /Users/onekopaka/systemsdb/log/newrelic_agent.passenger_Systems_DB.log
+[09/15/09 16:47:11 (27421)] INFO : Resolved collector.newrelic.com to 65.74.177.195
+[09/15/09 16:47:11 (27421)] INFO : Connected to NewRelic Service at 65.74.177.195:80
+[09/15/09 16:47:12 (27421)] INFO : Reporting performance data every 60 seconds
+[09/15/09 16:59:33 (27604)] INFO : Runtime environment: passenger
+[09/15/09 16:59:33 (27604)] WARN : Phusion Passenger has been detected. Some RPM memory statistics may have inaccuracies due to short process lifespans
+[09/15/09 16:59:33 (27604)] INFO : Error collector is enabled in agent config
+[09/15/09 16:59:33 (27604)] INFO : Transaction tracing is enabled in agent config
+[09/15/09 16:59:33 (27604)] INFO : Process is passenger spawner - don't connect to RPM service
+[09/15/09 16:59:33 (27604)] INFO : New Relic RPM Agent 2.8.11 Initialized: pid = 27604, handler = passenger
+[09/15/09 16:59:33 (27604)] INFO : Agent Log is found in /Users/onekopaka/systemsdb/log/newrelic_agent.passenger_Systems_DB.log
+[09/15/09 16:59:39 (27606)] INFO : Resolved collector.newrelic.com to 65.74.177.195
+[09/15/09 16:59:40 (27606)] INFO : Connected to NewRelic Service at 65.74.177.195:80
+[09/15/09 16:59:41 (27606)] INFO : Reporting performance data every 60 seconds
