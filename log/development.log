@@ -11290,3 +11290,74 @@ Rendering template within layouts/application
 Rendering systems/index
   [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
 Completed in 38ms (View: 29, DB: 3) | 200 OK [http://systemsdb.theoks.net/systems]
+
+
+Processing SystemsController#index (for 72.189.175.137 at 2009-09-15 17:56:23) [GET]
+  Parameters: {"action"=>"index", "controller"=>"systems"}
+  [4;36;1mSystem Load (45.0ms)[0m   [0;1mSELECT * FROM "systems" ORDER BY make[0m
+Rendering template within layouts/application
+Rendering systems/index
+Completed in 1981ms (View: 1452, DB: 45) | 200 OK [http://systemsdb.theoks.net/systems]
+  [4;36;1mSQL (67.9ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+
+
+Processing SystemsController#index (for 2001:1938:81:94::2 at 2009-09-15 20:21:42) [GET]
+  Parameters: {"action"=>"index", "controller"=>"systems"}
+  [4;36;1mSystem Load (57.9ms)[0m   [0;1mSELECT * FROM "systems" ORDER BY make[0m
+Rendering template within layouts/application
+Rendering systems/index
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 368ms (View: 282, DB: 59) | 200 OK [http://systemsdb.theoks.net/]
+
+
+Processing SystemsController#show (for 2001:1938:81:94::2 at 2009-09-15 20:22:06) [GET]
+  Parameters: {"action"=>"show", "id"=>"5", "controller"=>"systems"}
+  [4;36;1mSystem Load (6.2ms)[0m   [0;1mSELECT * FROM "systems" WHERE ("systems"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering systems/show
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 614ms (View: 543, DB: 7) | 200 OK [http://systemsdb.theoks.net/systems/5]
+
+
+Processing SystemsController#show (for 75.16.232.89 at 2009-09-15 20:22:24) [GET]
+  Parameters: {"action"=>"show", "id"=>"5", "controller"=>"systems"}
+  [4;36;1mSystem Load (19.7ms)[0m   [0;1mSELECT * FROM "systems" WHERE ("systems"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering systems/show
+Completed in 177ms (View: 73, DB: 20) | 200 OK [http://systemsdb.theoks.net/systems/5]
+
+
+Processing SystemsController#show (for 2001:1938:81:94::2 at 2009-09-15 21:04:42) [GET]
+  Parameters: {"action"=>"show", "id"=>"5", "controller"=>"systems"}
+  [4;36;1mSystem Load (1.2ms)[0m   [0;1mSELECT * FROM "systems" WHERE ("systems"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering systems/show
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 919ms (View: 701, DB: 2) | 200 OK [http://systemsdb.theoks.net/systems/5]
+  [4;36;1mSQL (1.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+
+
+Processing SystemsController#find_by_barcode (for 2001:1938:81:94::2 at 2009-09-15 23:39:50) [GET]
+  Parameters: {"action"=>"find_by_barcode", "id"=>"123456", "controller"=>"systems"}
+  [4;36;1mSystem Load (97.3ms)[0m   [0;1mSELECT * FROM "systems" WHERE ("systems"."Barcode" = '123456') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering systems/find_by_barcode
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 1955ms (View: 1741, DB: 98) | 200 OK [http://systemsdb.theoks.net/systems/find_by_barcode/123456/]
+
+
+Processing SystemsController#find_by_barcode (for 2001:1938:81:94::2 at 2009-09-15 23:40:23) [GET]
+  Parameters: {"action"=>"find_by_barcode", "id"=>"123456", "controller"=>"systems"}
+  [4;36;1mSystem Load (1.3ms)[0m   [0;1mSELECT * FROM "systems" WHERE ("systems"."Barcode" = '123456') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering systems/find_by_barcode
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 78ms (View: 37, DB: 2) | 200 OK [http://systemsdb.theoks.net/systems/find_by_barcode/123456/]

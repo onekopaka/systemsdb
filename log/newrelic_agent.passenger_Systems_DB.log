@@ -372,3 +372,29 @@
 [09/15/09 16:59:39 (27606)] INFO : Resolved collector.newrelic.com to 65.74.177.195
 [09/15/09 16:59:40 (27606)] INFO : Connected to NewRelic Service at 65.74.177.195:80
 [09/15/09 16:59:41 (27606)] INFO : Reporting performance data every 60 seconds
+[09/15/09 17:56:28 (28379)] INFO : Resolved collector.newrelic.com to 65.74.177.195
+[09/15/09 17:56:29 (28379)] INFO : Connected to NewRelic Service at 65.74.177.195:80
+[09/15/09 17:56:29 (28379)] INFO : Reporting performance data every 60 seconds
+[09/15/09 20:21:34 (29894)] INFO : Runtime environment: passenger
+[09/15/09 20:21:34 (29894)] WARN : Phusion Passenger has been detected. Some RPM memory statistics may have inaccuracies due to short process lifespans
+[09/15/09 20:21:34 (29894)] INFO : Error collector is enabled in agent config
+[09/15/09 20:21:34 (29894)] INFO : Transaction tracing is enabled in agent config
+[09/15/09 20:21:36 (29894)] INFO : Process is passenger spawner - don't connect to RPM service
+[09/15/09 20:21:36 (29894)] INFO : New Relic RPM Agent 2.8.11 Initialized: pid = 29894, handler = passenger
+[09/15/09 20:21:36 (29894)] INFO : Agent Log is found in /Users/onekopaka/systemsdb/log/newrelic_agent.passenger_Systems_DB.log
+[09/15/09 20:21:47 (29899)] INFO : Resolved collector.newrelic.com to 65.74.177.195
+[09/15/09 20:21:48 (29899)] INFO : Connected to NewRelic Service at 65.74.177.195:80
+[09/15/09 20:21:48 (29899)] INFO : Reporting performance data every 60 seconds
+[09/15/09 21:04:47 (30960)] INFO : Resolved collector.newrelic.com to 65.74.177.195
+[09/15/09 21:04:48 (30960)] INFO : Connected to NewRelic Service at 65.74.177.195:80
+[09/15/09 21:04:48 (30960)] INFO : Reporting performance data every 60 seconds
+[09/15/09 23:39:48 (31835)] INFO : Runtime environment: passenger
+[09/15/09 23:39:48 (31835)] WARN : Phusion Passenger has been detected. Some RPM memory statistics may have inaccuracies due to short process lifespans
+[09/15/09 23:39:48 (31835)] INFO : Error collector is enabled in agent config
+[09/15/09 23:39:48 (31835)] INFO : Transaction tracing is enabled in agent config
+[09/15/09 23:39:48 (31835)] INFO : Process is passenger spawner - don't connect to RPM service
+[09/15/09 23:39:48 (31835)] INFO : New Relic RPM Agent 2.8.11 Initialized: pid = 31835, handler = passenger
+[09/15/09 23:39:48 (31835)] INFO : Agent Log is found in /Users/onekopaka/systemsdb/log/newrelic_agent.passenger_Systems_DB.log
+[09/15/09 23:39:56 (31837)] INFO : Resolved collector.newrelic.com to 65.74.177.195
+[09/15/09 23:39:56 (31837)] INFO : Connected to NewRelic Service at 65.74.177.195:80
+[09/15/09 23:39:56 (31837)] INFO : Reporting performance data every 60 seconds
